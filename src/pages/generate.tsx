@@ -55,7 +55,9 @@ export default function Generate() {
       ) {
         processedUrl = "https://" + processedUrl;
       }
-      setQrValue(processedUrl);
+      // Create the awareness URL with the destination as a query parameter
+      const awarenessUrl = `${window.location.origin}/?q=${encodeURIComponent(processedUrl)}`;
+      setQrValue(awarenessUrl);
     } catch (err) {
       setError("Invalid URL format. Please enter a valid URL.");
     } finally {
@@ -184,9 +186,14 @@ export default function Generate() {
                 <ul className="list-disc pl-6 mb-4 space-y-2">
                   <li>
                     The destination URL:{" "}
-                    <code className="bg-gray-100 px-2 py-1 rounded">
+                    <a
+                      href={qrValue}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#29a587] hover:text-[#238f75] underline"
+                    >
                       {qrValue}
-                    </code>
+                    </a>
                   </li>
                   <li>Quick safety tips for scanning QR codes</li>
                   <li>A brief explanation of quishing (QR code phishing)</li>
