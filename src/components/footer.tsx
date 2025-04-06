@@ -43,6 +43,22 @@ export default function Footer() {
                   About
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/terms"
+                  className="text-base text-gray-500 hover:text-[#29a587]"
+                >
+                  Terms of Use
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-base text-gray-500 hover:text-[#29a587]"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
@@ -72,7 +88,16 @@ export default function Footer() {
         </div>
         <div className="mt-8 border-t border-gray-100 pt-8">
           <p className="text-base text-gray-400 text-center">
-            © {new Date().getFullYear()} QR Spoof. All rights reserved.
+            © {new Date().getFullYear()}{" "}
+            <a
+              href="https://arvid.tech"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#29a587]"
+            >
+              Arvid Berndtsson
+            </a>
+            . All rights reserved.
           </p>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { useState, useEffect } from "react";
+import Section from "@/components/Section";
 import { QRCodeCanvas } from "qrcode.react";
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -242,21 +243,6 @@ export default function About() {
           </div>
         </div>
       </main>
-    </div>
-  );
-}
-
-function Section({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-      <h2 className="text-2xl font-semibold text-gray-900 mb-4">{title}</h2>
-      <div className="text-gray-600 leading-relaxed">{children}</div>
     </div>
   );
 }
