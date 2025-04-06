@@ -63,13 +63,13 @@ export default function About() {
 
             <Section title="Why this project exists">
               <p>
-                We've learned not to click sketchy links in emails. But a random
-                QR code on a lamppost? Sure, why not.
+                We&apos;ve learned not to click sketchy links in emails. But a
+                random QR code on a lamppost? Sure, why not.
               </p>
               <p className="mt-4">
                 That contradiction got stuck in my head years ago — the first
-                time I scanned a QR code and thought: "I have no idea where that
-                just took me."
+                time I scanned a QR code and thought: &quot;I have no idea where
+                that just took me.&quot;
               </p>
               <p className="mt-4">
                 In the summer of 2024, I bought this domain, thinking I&apos;d
