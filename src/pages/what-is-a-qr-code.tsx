@@ -44,22 +44,26 @@ export default function WhatIsAQRCode() {
   const howItWorksDetails = [
     {
       title: "Finder Patterns",
-      description: "Three identical squares in the corners help scanners identify and orient the QR code.",
+      description:
+        "Three identical squares in the corners help scanners identify and orient the QR code.",
       icon: "🔍",
     },
     {
       title: "Alignment Patterns",
-      description: "Smaller squares that help scanners correct for distortion and perspective.",
+      description:
+        "Smaller squares that help scanners correct for distortion and perspective.",
       icon: "📊",
     },
     {
       title: "Timing Patterns",
-      description: "Alternating black and white modules that help determine the size of the QR code.",
+      description:
+        "Alternating black and white modules that help determine the size of the QR code.",
       icon: "📏",
     },
     {
       title: "Error Correction",
-      description: "Redundant data that allows the QR code to be read even if partially damaged.",
+      description:
+        "Redundant data that allows the QR code to be read even if partially damaged.",
       icon: "🛡️",
     },
   ];
@@ -67,7 +71,8 @@ export default function WhatIsAQRCode() {
   const commonUsesDetails = [
     {
       title: "Marketing",
-      description: "Product information, promotional offers, and social media links",
+      description:
+        "Product information, promotional offers, and social media links",
       icon: "📢",
     },
     {
@@ -128,4 +133,4 @@ export default function WhatIsAQRCode() {
       </Section>
     </FAQPageLayout>
   );
-} 
+}

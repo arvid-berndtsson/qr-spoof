@@ -164,9 +164,12 @@ export default function Home() {
             )}
 
             <div className="prose prose-lg max-w-none mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">Generate Awareness QR Codes</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                Generate Awareness QR Codes
+              </h2>
               <p className="mb-4">
-                Create QR codes that help educate users about QR code security. When scanned, these codes will:
+                Create QR codes that help educate users about QR code security.
+                When scanned, these codes will:
               </p>
               <ul className="list-disc pl-6 mb-4 space-y-2">
                 <li>Show the destination URL before redirecting</li>

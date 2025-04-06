@@ -21,12 +21,14 @@ export default function WhatIsQuishing() {
   const understandingDetails = [
     {
       title: "Common Targets",
-      description: "Public Wi-Fi networks, restaurant menus, parking meters, event tickets, and product packaging",
+      description:
+        "Public Wi-Fi networks, restaurant menus, parking meters, event tickets, and product packaging",
       icon: "🎯",
     },
     {
       title: "Attack Methods",
-      description: "URL redirection, malware downloads, credential harvesting, payment fraud, and data theft",
+      description:
+        "URL redirection, malware downloads, credential harvesting, payment fraud, and data theft",
       icon: "⚔️",
     },
   ];
@@ -34,17 +36,20 @@ export default function WhatIsQuishing() {
   const examplesDetails = [
     {
       title: "Parking Meter Scam",
-      description: "Attackers placed malicious QR codes over legitimate ones on parking meters, redirecting users to fake payment pages that stole credit card information. Over $500,000 was stolen from victims before the scam was discovered.",
+      description:
+        "Attackers placed malicious QR codes over legitimate ones on parking meters, redirecting users to fake payment pages that stole credit card information. Over $500,000 was stolen from victims before the scam was discovered.",
       icon: "🚗",
     },
     {
       title: "Restaurant Menu Attack",
-      description: "Hackers replaced QR codes on digital menus with malicious versions that installed malware on customers' phones. Personal data was compromised for thousands of customers, including payment information and contact details.",
+      description:
+        "Hackers replaced QR codes on digital menus with malicious versions that installed malware on customers' phones. Personal data was compromised for thousands of customers, including payment information and contact details.",
       icon: "🍽️",
     },
     {
       title: "Public Wi-Fi Trap",
-      description: "Cybercriminals created fake QR codes for 'free public Wi-Fi' that installed keyloggers on victims' devices. This allowed attackers to capture sensitive information including passwords and banking details.",
+      description:
+        "Cybercriminals created fake QR codes for 'free public Wi-Fi' that installed keyloggers on victims' devices. This allowed attackers to capture sensitive information including passwords and banking details.",
       icon: "📶",
     },
   ];
@@ -52,17 +57,20 @@ export default function WhatIsQuishing() {
   const protectionDetails = [
     {
       title: "Before Scanning",
-      description: "Check for tampering, verify the source, and use trusted scanners. Look for signs of physical tampering or stickers placed over existing QR codes.",
+      description:
+        "Check for tampering, verify the source, and use trusted scanners. Look for signs of physical tampering or stickers placed over existing QR codes.",
       icon: "🔍",
     },
     {
       title: "While Scanning",
-      description: "Preview the URL, check for HTTPS, and look for typos. Most QR scanner apps will show you the destination URL before opening it - take a moment to verify it looks legitimate.",
+      description:
+        "Preview the URL, check for HTTPS, and look for typos. Most QR scanner apps will show you the destination URL before opening it - take a moment to verify it looks legitimate.",
       icon: "📱",
     },
     {
       title: "After Scanning",
-      description: "Verify the website, check for SSL, and use strong passwords. If you're asked to enter sensitive information, double-check the website's security indicators and consider using a password manager.",
+      description:
+        "Verify the website, check for SSL, and use strong passwords. If you're asked to enter sensitive information, double-check the website's security indicators and consider using a password manager.",
       icon: "🔒",
     },
   ];
@@ -92,13 +100,24 @@ export default function WhatIsQuishing() {
         <div className="bg-red-50 border-l-4 border-red-400 p-4 mb-6">
           <div className="flex">
             <div className="flex-shrink-0">
-              <svg className="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+              <svg
+                className="h-5 w-5 text-red-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                  clipRule="evenodd"
+                />
               </svg>
             </div>
             <div className="ml-3">
               <p className="text-sm text-red-700">
-                Quishing attacks are on the rise, with a 300% increase in reported cases in 2023. These attacks target both individuals and businesses, often resulting in significant financial losses and data breaches.
+                Quishing attacks are on the rise, with a 300% increase in
+                reported cases in 2023. These attacks target both individuals
+                and businesses, often resulting in significant financial losses
+                and data breaches.
               </p>
             </div>
           </div>
@@ -106,7 +125,8 @@ export default function WhatIsQuishing() {
 
         <div className="prose prose-lg max-w-none mb-6">
           <p>
-            Quishing (QR code phishing) is a type of cyber attack where malicious QR codes are used to trick users into:
+            Quishing (QR code phishing) is a type of cyber attack where
+            malicious QR codes are used to trick users into:
           </p>
         </div>
 
@@ -118,7 +138,10 @@ export default function WhatIsQuishing() {
 
         <div className="prose prose-lg max-w-none mt-6">
           <p>
-            These attacks are particularly dangerous because QR codes are often perceived as safe and convenient. Many users don&apos;t think twice before scanning a QR code, especially in trusted environments like restaurants or public spaces.
+            These attacks are particularly dangerous because QR codes are often
+            perceived as safe and convenient. Many users don&apos;t think twice
+            before scanning a QR code, especially in trusted environments like
+            restaurants or public spaces.
           </p>
         </div>
       </Section>
@@ -126,7 +149,8 @@ export default function WhatIsQuishing() {
       <Section title="Real-World Examples">
         <div className="prose prose-lg max-w-none mb-6">
           <p>
-            Here are some notable examples of quishing attacks that demonstrate the real-world impact of this threat:
+            Here are some notable examples of quishing attacks that demonstrate
+            the real-world impact of this threat:
           </p>
         </div>
 
@@ -138,7 +162,10 @@ export default function WhatIsQuishing() {
 
         <div className="prose prose-lg max-w-none mt-6">
           <p>
-            These examples show how quishing attacks can target different aspects of daily life, from parking payments to dining out. The common thread is the exploitation of trust in QR codes as a convenient technology.
+            These examples show how quishing attacks can target different
+            aspects of daily life, from parking payments to dining out. The
+            common thread is the exploitation of trust in QR codes as a
+            convenient technology.
           </p>
         </div>
       </Section>
@@ -146,7 +173,8 @@ export default function WhatIsQuishing() {
       <Section title="Protection Measures">
         <div className="prose prose-lg max-w-none mb-6">
           <p>
-            While quishing attacks are sophisticated, there are several steps you can take to protect yourself:
+            While quishing attacks are sophisticated, there are several steps
+            you can take to protect yourself:
           </p>
         </div>
 
@@ -158,10 +186,13 @@ export default function WhatIsQuishing() {
 
         <div className="prose prose-lg max-w-none mt-6">
           <p>
-            Remember that QR codes are just a tool - like any technology, they can be used for both good and malicious purposes. The key is to maintain awareness and follow security best practices when scanning QR codes.
+            Remember that QR codes are just a tool - like any technology, they
+            can be used for both good and malicious purposes. The key is to
+            maintain awareness and follow security best practices when scanning
+            QR codes.
           </p>
         </div>
       </Section>
     </FAQPageLayout>
   );
-} 
+}

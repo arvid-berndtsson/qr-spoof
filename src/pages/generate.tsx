@@ -5,9 +5,12 @@ import { toPng, toJpeg, toSvg } from "html-to-image";
 import { jsPDF } from "jspdf";
 import Link from "next/link";
 
-const QRCodeSVG = dynamic(() => import("qrcode.react").then(mod => mod.QRCodeSVG), {
-  ssr: false
-});
+const QRCodeSVG = dynamic(
+  () => import("qrcode.react").then((mod) => mod.QRCodeSVG),
+  {
+    ssr: false,
+  },
+);
 
 export const metadata: Metadata = {
   title: "Generate QR Code - QR Code Security",
@@ -119,9 +122,12 @@ export default function Generate() {
 
           <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
             <div className="prose prose-lg max-w-none mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">How it works</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                How it works
+              </h2>
               <p className="mb-4">
-                When someone scans your QR code, they&apos;ll first see an awareness page that:
+                When someone scans your QR code, they&apos;ll first see an
+                awareness page that:
               </p>
               <ul className="list-disc pl-6 mb-4 space-y-2">
                 <li>Shows the destination URL before redirecting</li>
@@ -129,7 +135,8 @@ export default function Generate() {
                 <li>Gives users a moment to verify the link is safe</li>
               </ul>
               <p className="mb-4">
-                This helps educate users about QR code security while still getting them to their destination.
+                This helps educate users about QR code security while still
+                getting them to their destination.
               </p>
             </div>
 
@@ -167,17 +174,26 @@ export default function Generate() {
           {qrValue && (
             <div className="bg-white rounded-lg shadow-sm p-8">
               <div className="prose prose-lg max-w-none mb-8">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Preview</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Preview
+                </h2>
                 <p className="mb-4">
-                  When scanned, this QR code will first show an awareness page with the following information:
+                  When scanned, this QR code will first show an awareness page
+                  with the following information:
                 </p>
                 <ul className="list-disc pl-6 mb-4 space-y-2">
-                  <li>The destination URL: <code className="bg-gray-100 px-2 py-1 rounded">{qrValue}</code></li>
+                  <li>
+                    The destination URL:{" "}
+                    <code className="bg-gray-100 px-2 py-1 rounded">
+                      {qrValue}
+                    </code>
+                  </li>
                   <li>Quick safety tips for scanning QR codes</li>
                   <li>A brief explanation of quishing (QR code phishing)</li>
                 </ul>
                 <p className="mb-4">
-                  After a few seconds, users will be automatically redirected to the destination URL.
+                  After a few seconds, users will be automatically redirected to
+                  the destination URL.
                 </p>
               </div>
 

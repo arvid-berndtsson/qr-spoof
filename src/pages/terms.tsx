@@ -39,30 +39,43 @@ export default function Terms() {
           <div className="space-y-8 mt-12">
             <Section title="Purpose">
               <p>
-                This tool is designed to help raise awareness around <strong>QR code phishing (quishing)</strong> by offering a safe, educational detour before users reach their intended destination.
+                This tool is designed to help raise awareness around{" "}
+                <strong>QR code phishing (quishing)</strong> by offering a safe,
+                educational detour before users reach their intended
+                destination.
               </p>
             </Section>
 
             <Section title="Agreement">
-              <p className="mb-4">By using this tool, you agree to the following:</p>
+              <p className="mb-4">
+                By using this tool, you agree to the following:
+              </p>
               <ul className="space-y-4 text-gray-600">
                 <li className="flex items-start">
                   <span className="text-[#29a587] mr-2">•</span>
-                  <strong>Only use it to promote awareness</strong>, not for misleading, malicious or disruptive purposes
+                  <strong>Only use it to promote awareness</strong>, not for
+                  misleading, malicious or disruptive purposes
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#29a587] mr-2">•</span>
-                  You are fully responsible for how and where you place generated QR codes
+                  You are fully responsible for how and where you place
+                  generated QR codes
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#29a587] mr-2">•</span>
-                  <strong>Do not use this tool to impersonate, interrupt, or confuse legitimate businesses</strong>
+                  <strong>
+                    Do not use this tool to impersonate, interrupt, or confuse
+                    legitimate businesses
+                  </strong>
                 </li>
               </ul>
             </Section>
 
             <Section title="Public Use Guidelines">
-              <p className="mb-4">If you&apos;re placing a QR code in a public or commercial setting (like on a restaurant table), make sure it:</p>
+              <p className="mb-4">
+                If you&apos;re placing a QR code in a public or commercial
+                setting (like on a restaurant table), make sure it:
+              </p>
               <ul className="space-y-4 text-gray-600">
                 <li className="flex items-start">
                   <span className="text-[#29a587] mr-2">•</span>
@@ -74,17 +87,23 @@ export default function Terms() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#29a587] mr-2">•</span>
-                  Includes a working link or reference to the actual destination (e.g. menu, payment link, etc.)
+                  Includes a working link or reference to the actual destination
+                  (e.g. menu, payment link, etc.)
                 </li>
               </ul>
             </Section>
 
             <Section title="Liability">
               <p>
-                This is an open and free tool. <strong>I, Arvid Berndtsson, take no responsibility for how QR codes generated via this service are used.</strong>
+                This is an open and free tool.{" "}
+                <strong>
+                  I, Arvid Berndtsson, take no responsibility for how QR codes
+                  generated via this service are used.
+                </strong>
               </p>
               <p className="mt-4">
-                Use common sense, stay ethical, and help promote better digital hygiene – without creating confusion.
+                Use common sense, stay ethical, and help promote better digital
+                hygiene – without creating confusion.
               </p>
             </Section>
 
@@ -107,11 +126,17 @@ export default function Terms() {
   );
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
       <h2 className="text-2xl font-semibold text-gray-900 mb-4">{title}</h2>
       <div className="text-gray-600 leading-relaxed">{children}</div>
     </div>
   );
-} 
+}

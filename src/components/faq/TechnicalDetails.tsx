@@ -26,13 +26,15 @@ export default function TechnicalDetails({
           <p className="text-xl text-gray-700">{description}</p>
         </div>
       )}
-      
+
       <ul className="list-none space-y-6">
         {details.map((detail, index) => (
           <li key={index} className="flex items-start">
             <span className="text-[#29a587] mr-2">{detail.icon || "📊"}</span>
             <div>
-              <strong className="text-lg font-semibold text-gray-900">{detail.title}</strong>
+              <strong className="text-lg font-semibold text-gray-900">
+                {detail.title}
+              </strong>
               <p className="mt-2 text-gray-700">{detail.description}</p>
             </div>
           </li>
@@ -40,4 +42,4 @@ export default function TechnicalDetails({
       </ul>
     </div>
   );
-} 
+}

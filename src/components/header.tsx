@@ -13,7 +13,10 @@ export default function Header() {
   // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
         setIsDropdownOpen(false);
       }
     }
@@ -37,7 +40,10 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-xl font-semibold text-[#29a587] tracking-tight">
+            <Link
+              href="/"
+              className="text-xl font-semibold text-[#29a587] tracking-tight"
+            >
               QR Spoof
             </Link>
           </div>
@@ -76,8 +82,8 @@ export default function Header() {
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className={`flex items-center text-sm font-medium transition-colors duration-200 ${
-                  isDropdownOpen || 
-                  currentPath.startsWith("/what-is-quishing") || 
+                  isDropdownOpen ||
+                  currentPath.startsWith("/what-is-quishing") ||
                   currentPath.startsWith("/how-to-scan-qr-codes-safely") ||
                   currentPath.startsWith("/what-is-a-qr-code") ||
                   currentPath.startsWith("/technical-details")

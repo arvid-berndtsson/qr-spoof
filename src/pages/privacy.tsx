@@ -39,7 +39,9 @@ export default function Privacy() {
           <div className="space-y-8 mt-12">
             <Section title="Analytics">
               <p>
-                This website uses a self-hosted instance of Umami Analytics to understand how visitors interact with the site. Umami is an open-source, privacy-focused analytics tool that:
+                This website uses a self-hosted instance of Umami Analytics to
+                understand how visitors interact with the site. Umami is an
+                open-source, privacy-focused analytics tool that:
               </p>
               <ul className="space-y-4 text-gray-600 mt-4">
                 <li className="flex items-start">
@@ -60,14 +62,14 @@ export default function Privacy() {
                 </li>
               </ul>
               <p className="mt-4">
-                The data collected includes basic information like page views, referrers, and device types. This helps me understand how the site is being used and how to improve it.
+                The data collected includes basic information like page views,
+                referrers, and device types. This helps me understand how the
+                site is being used and how to improve it.
               </p>
             </Section>
 
             <Section title="QR Code Generation">
-              <p>
-                When you generate a QR code on this site:
-              </p>
+              <p>When you generate a QR code on this site:</p>
               <ul className="space-y-4 text-gray-600 mt-4">
                 <li className="flex items-start">
                   <span className="text-[#29a587] mr-2">•</span>
@@ -85,7 +87,9 @@ export default function Privacy() {
             </Section>
 
             <Section title="Contact">
-              <p className="mb-4">If you have questions about our privacy practices:</p>
+              <p className="mb-4">
+                If you have questions about our privacy practices:
+              </p>
               <a
                 href="https://linkedin.com/in/arvidberndtsson"
                 target="_blank"

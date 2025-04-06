@@ -4,7 +4,10 @@ import Link from "next/link";
 const pages = [
   { title: "What is a QR Code?", path: "/what-is-a-qr-code" },
   { title: "What is Quishing?", path: "/what-is-quishing" },
-  { title: "How to Scan QR Codes Safely", path: "/how-to-scan-qr-codes-safely" },
+  {
+    title: "How to Scan QR Codes Safely",
+    path: "/how-to-scan-qr-codes-safely",
+  },
   { title: "Technical Details", path: "/technical-details" },
   { title: "Generate QR Code", path: "/generate" },
   { title: "About", path: "/about" },
@@ -19,12 +22,15 @@ export default function Search() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const filteredPages = pages.filter((page) =>
-    page.title.toLowerCase().includes(query.toLowerCase())
+    page.title.toLowerCase().includes(query.toLowerCase()),
   );
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
+      if (
+        searchRef.current &&
+        !searchRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     }
@@ -106,4 +112,4 @@ export default function Search() {
       )}
     </div>
   );
-} 
+}

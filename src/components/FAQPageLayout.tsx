@@ -18,18 +18,14 @@ export default function FAQPageLayout({
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div 
+      <div
         className="relative py-16 sm:py-24"
         style={{ backgroundColor: accentColor }}
       >
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            {icon && (
-              <div className="mb-6">
-                {icon}
-              </div>
-            )}
+            {icon && <div className="mb-6">{icon}</div>}
             <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
               {title}
             </h1>
@@ -42,10 +38,8 @@ export default function FAQPageLayout({
 
       {/* Content Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="space-y-12">
-          {children}
-        </div>
+        <div className="space-y-12">{children}</div>
       </div>
     </div>
   );
-} 
+}
