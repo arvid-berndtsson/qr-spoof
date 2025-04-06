@@ -50,9 +50,9 @@ export default function About() {
           <div className="space-y-8 mt-12">
             <Section title="What is quishing?">
               <p>
-                <strong>Quishing</strong> is phishing using QR codes. It's when
-                attackers replace a link with a QR code, hoping you'll scan
-                without thinking — leading to fake login pages, malware, or
+                <strong>Quishing</strong> is phishing using QR codes. It&apos;s
+                when attackers replace a link with a QR code, hoping you&apos;ll
+                scan without thinking — leading to fake login pages, malware, or
                 worse.
               </p>
               <p className="mt-4">
@@ -72,7 +72,7 @@ export default function About() {
                 just took me."
               </p>
               <p className="mt-4">
-                In the summer of 2024, I bought this domain, thinking I'd
+                In the summer of 2024, I bought this domain, thinking I&apos;d
                 eventually do something with it. Then, while listening to an
                 episode of the Swedish podcast{" "}
                 <a
@@ -93,7 +93,7 @@ export default function About() {
               <p>
                 This site lets <strong>anyone</strong> generate a QR code that
                 points here — a safe in-between page that encourages people to
-                stop and think before they trust what's behind the scan.
+                stop and think before they trust what&apos;s behind the scan.
               </p>
               <p className="mt-4">
                 You can use it for awareness campaigns, workshops, or just as a
@@ -106,7 +106,7 @@ export default function About() {
 
             <Section title="Who I am">
               <p>
-                Hi! I'm{" "}
+                Hi! I&apos;m{" "}
                 <a
                   href="https://arvid.tech"
                   target="_blank"
@@ -119,15 +119,17 @@ export default function About() {
                 the weird ways we interact with tech.
               </p>
               <p className="mt-4">
-                I've always been curious about small, everyday risks, like QR
-                codes, and how easily they bypass the caution we apply
-                elsewhere. After that first moment of "wait, where did this send
-                me?", I started using Norton's QR scanner, which previews links
-                before opening them. That small habit has stuck ever since.
+                I&apos;ve always been curious about small, everyday risks, like
+                QR codes, and how easily they bypass the caution we apply
+                elsewhere. After that first moment of &quot;wait, where did
+                this send me?&quot;, I started using Norton&apos;s QR scanner,
+                which previews links before opening them. That small habit has
+                stuck ever since.
               </p>
               <p className="mt-4">
-                I'm not on a crusade, I just want you to think before you scan a
-                QR code, just like you pause before clicking a link in an email.
+                I&apos;m not on a crusade, I just want you to think before you
+                scan a QR code, just like you pause before clicking a link in an
+                email.
               </p>
             </Section>
 
@@ -139,8 +141,8 @@ export default function About() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#29a587] mr-2">•</span>
-                  Don't scan random codes in public spaces, especially stickers
-                  or handouts with no context
+                  Don&apos;t scan random codes in public spaces, especially
+                  stickers or handouts with no context
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#29a587] mr-2">•</span>
