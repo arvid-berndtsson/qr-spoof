@@ -118,7 +118,7 @@ export default function WhatIsQuishing() {
 
         <div className="prose prose-lg max-w-none mt-6">
           <p>
-            These attacks are particularly dangerous because QR codes are often perceived as safe and convenient. Many users don't think twice before scanning a QR code, especially in trusted environments like restaurants or public spaces.
+            These attacks are particularly dangerous because QR codes are often perceived as safe and convenient. Many users don&apos;t think twice before scanning a QR code, especially in trusted environments like restaurants or public spaces.
           </p>
         </div>
       </Section>

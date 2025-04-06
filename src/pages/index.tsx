@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { useState, useEffect } from "react";
-import { QRCodeSVG } from "qrcode.react";
 import { useRouter } from "next/router";
-import Link from "next/link";
+import QRCodeGenerator from "@/components/QRCodeGenerator";
 
 export const metadata: Metadata = {
   title: "QR Code Security - Protect Yourself from Quishing",
@@ -164,37 +163,19 @@ export default function Home() {
               </div>
             )}
 
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-                Spread Awareness
-              </h2>
-              <p className="text-gray-600 mb-6">
-                Help others learn about QR code security by creating and sharing
-                awareness QR codes.
+            <div className="prose prose-lg max-w-none mb-8">
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">Generate Awareness QR Codes</h2>
+              <p className="mb-4">
+                Create QR codes that help educate users about QR code security. When scanned, these codes will:
               </p>
-              <div className="flex flex-col items-center space-y-6">
-                <Link
-                  href="/generate"
-                  className="w-full bg-[#29a587] text-white text-center px-6 py-3 rounded-lg hover:bg-[#238f75] transition-colors"
-                >
-                  Generate Security QR Codes
-                </Link>
-                {qrValue && (
-                  <div className="bg-white p-6 rounded-xl border border-gray-200">
-                    <QRCodeSVG
-                      value={qrValue}
-                      size={200}
-                      level="H"
-                      includeMargin={true}
-                      className="mx-auto"
-                    />
-                    <p className="text-center text-gray-500 mt-4 text-sm">
-                      Share this QR code to spread awareness
-                    </p>
-                  </div>
-                )}
-              </div>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li>Show the destination URL before redirecting</li>
+                <li>Provide quick safety tips for scanning QR codes</li>
+                <li>Give users a moment to verify the link is safe</li>
+              </ul>
             </div>
+
+            <QRCodeGenerator />
           </div>
         </div>
       </main>

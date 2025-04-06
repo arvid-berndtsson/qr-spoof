@@ -4,6 +4,7 @@ import Section from "@/components/Section";
 import { QRCodeCanvas } from "qrcode.react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import QRCodeGenerator from "@/components/QRCodeGenerator";
 
 export const metadata: Metadata = {
   title: "QR Codes, Trust, and a Quiet Reminder",
@@ -202,44 +203,23 @@ export default function About() {
               </ul>
             </Section>
 
-            <div className="flex flex-col items-center space-y-6">
-              <Link
-                href="/generate"
-                className="w-full bg-[#29a587] text-white text-center px-6 py-3 rounded-lg hover:bg-[#238f75] transition-colors"
-              >
-                Generate Awareness QR Codes
-              </Link>
-              {qrValue && (
-                <div className="bg-white p-6 rounded-xl border border-gray-200">
-                  <a
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      const canvas = document.querySelector("canvas");
-                      if (canvas) {
-                        const link = document.createElement("a");
-                        link.download = "qr-code-security-awareness.png";
-                        link.href = canvas.toDataURL("image/png");
-                        link.click();
-                      }
-                    }}
-                    className="block"
-                    title="Right-click to save and share this QR code"
-                  >
-                    <QRCodeCanvas
-                      value={qrValue}
-                      size={200}
-                      level="H"
-                      includeMargin={true}
-                      className="mx-auto"
-                    />
-                  </a>
-                  <p className="text-center text-gray-500 mt-4 text-sm">
-                    Click to download or right-click to save this QR code
-                  </p>
-                </div>
-              )}
+            <div className="prose prose-lg max-w-none mb-8">
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">How it works</h2>
+              <p className="mb-4">
+                When someone scans your QR code, they&apos;ll first see an awareness page that:
+              </p>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li>Shows the destination URL before redirecting</li>
+                <li>Provides quick safety tips for scanning QR codes</li>
+                <li>Gives users a moment to verify the link is safe</li>
+              </ul>
+              <p className="mb-4">
+                This helps educate users about QR code security while still getting them to their destination.
+              </p>
             </div>
+
+            <QRCodeGenerator />
+
           </div>
         </div>
       </main>

@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import { useState } from "react";
-import { QRCodeSVG } from "qrcode.react";
+import dynamic from "next/dynamic";
 import { toPng, toJpeg, toSvg } from "html-to-image";
 import { jsPDF } from "jspdf";
 import Link from "next/link";
+
+const QRCodeSVG = dynamic(() => import("qrcode.react").then(mod => mod.QRCodeSVG), {
+  ssr: false
+});
 
 export const metadata: Metadata = {
   title: "Generate QR Code - QR Code Security",
