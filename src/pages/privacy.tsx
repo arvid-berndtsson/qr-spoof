@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Section from "@/components/Section";
 
+export const runtime = "experimental-edge";
+
 export const metadata: Metadata = {
   title: "Privacy Policy - QR Code Security",
   description: "Privacy policy for QR code security awareness tool.",

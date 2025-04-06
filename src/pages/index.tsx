@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import QRCodeGenerator from "@/components/QRCodeGenerator";
 
+export const runtime = "experimental-edge";
+
 export const metadata: Metadata = {
   title: "QR Code Security - Protect Yourself from Quishing",
   description:

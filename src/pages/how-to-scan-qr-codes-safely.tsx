@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import FAQPageLayout from "../components/FAQPageLayout";
 import Section from "../components/Section";
@@ -6,6 +6,8 @@ import Checklist from "../components/faq/Checklist";
 import AppRecommendations from "../components/faq/AppRecommendations";
 import Scenarios from "../components/faq/Scenarios";
 import EmergencyActions from "../components/faq/EmergencyActions";
+
+export const runtime = "experimental-edge";
 
 export const metadata: Metadata = {
   title: "How to Scan QR Codes Safely | QR Code Security Guide",

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+export const runtime = "experimental-edge";
+
 export const metadata: Metadata = {
   title: "Terms of Use - QR Code Security",
   description: "Responsible use policy for QR code security awareness tool.",

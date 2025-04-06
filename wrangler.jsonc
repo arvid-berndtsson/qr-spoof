@@ -1,0 +1,8 @@
+{
+  "name": "qr-spoof",
+  "compatibility_date": "2025-04-06",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "pages_build_output_dir": ".vercel/output/static"
+}

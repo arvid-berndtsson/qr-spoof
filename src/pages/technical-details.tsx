@@ -4,6 +4,8 @@ import FAQPageLayout from "../components/FAQPageLayout";
 import Section from "../components/Section";
 import TechnicalDetails from "../components/faq/TechnicalDetails";
 
+export const runtime = "experimental-edge";
+
 export const metadata: Metadata = {
   title: "Technical Details | QR Code Security Guide",
   description:

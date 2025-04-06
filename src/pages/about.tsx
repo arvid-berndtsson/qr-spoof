@@ -6,6 +6,8 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import QRCodeGenerator from "@/components/QRCodeGenerator";
 
+export const runtime = "experimental-edge";
+
 export const metadata: Metadata = {
   title: "QR Codes, Trust, and a Quiet Reminder",
   description:

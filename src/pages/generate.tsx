@@ -5,6 +5,8 @@ import { toPng, toJpeg, toSvg } from "html-to-image";
 import { jsPDF } from "jspdf";
 import Link from "next/link";
 
+export const runtime = "experimental-edge";
+
 const QRCodeSVG = dynamic(
   () => import("qrcode.react").then((mod) => mod.QRCodeSVG),
   {
