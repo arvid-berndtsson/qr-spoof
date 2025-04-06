@@ -4,5 +4,10 @@
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  "pages_build_output_dir": ".vercel/output/static"
+  "pages_build_output_dir": ".vercel/output/static",
+  "vars": {
+    "NEXT_PUBLIC_UMAMI_WEBSITE_ID": "ce3f1f4f-bc8a-42ae-a29a-3966aa2f4e0e",
+    "NEXT_PUBLIC_UMAMI_URL": "https://t.arvid.tech",
+    "NEXT_PUBLIC_SITE_URL": "https://qrspoof.com"
+  }
 }
