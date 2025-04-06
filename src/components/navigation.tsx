@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Navigation() {
   const router = useRouter();
@@ -17,9 +17,9 @@ export default function Navigation() {
             <Link
               href="/"
               className={`flex items-center px-3 py-2 text-sm font-medium ${
-                isActive('/') 
-                  ? 'text-[#29a587] border-b-2 border-[#29a587]' 
-                  : 'text-gray-500 hover:text-[#29a587] hover:border-b-2 hover:border-[#29a587]'
+                isActive("/")
+                  ? "text-[#29a587] border-b-2 border-[#29a587]"
+                  : "text-gray-500 hover:text-[#29a587] hover:border-b-2 hover:border-[#29a587]"
               }`}
             >
               Home
@@ -27,9 +27,9 @@ export default function Navigation() {
             <Link
               href="/generate"
               className={`flex items-center px-3 py-2 text-sm font-medium ${
-                isActive('/generate') 
-                  ? 'text-[#29a587] border-b-2 border-[#29a587]' 
-                  : 'text-gray-500 hover:text-[#29a587] hover:border-b-2 hover:border-[#29a587]'
+                isActive("/generate")
+                  ? "text-[#29a587] border-b-2 border-[#29a587]"
+                  : "text-gray-500 hover:text-[#29a587] hover:border-b-2 hover:border-[#29a587]"
               }`}
             >
               Generate
@@ -37,9 +37,9 @@ export default function Navigation() {
             <Link
               href="/about"
               className={`flex items-center px-3 py-2 text-sm font-medium ${
-                isActive('/about') 
-                  ? 'text-[#29a587] border-b-2 border-[#29a587]' 
-                  : 'text-gray-500 hover:text-[#29a587] hover:border-b-2 hover:border-[#29a587]'
+                isActive("/about")
+                  ? "text-[#29a587] border-b-2 border-[#29a587]"
+                  : "text-gray-500 hover:text-[#29a587] hover:border-b-2 hover:border-[#29a587]"
               }`}
             >
               About
@@ -49,4 +49,4 @@ export default function Navigation() {
       </div>
     </nav>
   );
-} 
+}

@@ -7,10 +7,12 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Generate QR Code - QR Code Security",
-  description: "Generate QR codes to raise awareness about QR code security and quishing attacks.",
+  description:
+    "Generate QR codes to raise awareness about QR code security and quishing attacks.",
   openGraph: {
     title: "Generate QR Code - QR Code Security",
-    description: "Generate QR codes to raise awareness about QR code security and quishing attacks.",
+    description:
+      "Generate QR codes to raise awareness about QR code security and quishing attacks.",
     url: "https://qrspoof.com/generate",
     siteName: "QR Code Security",
     images: [
@@ -40,7 +42,10 @@ export default function Generate() {
     try {
       // Ensure the URL has a protocol
       let processedUrl = url.trim();
-      if (!processedUrl.startsWith("http://") && !processedUrl.startsWith("https://")) {
+      if (
+        !processedUrl.startsWith("http://") &&
+        !processedUrl.startsWith("https://")
+      ) {
         processedUrl = "https://" + processedUrl;
       }
       setQrValue(processedUrl);
@@ -128,9 +133,7 @@ export default function Generate() {
                 />
               </div>
 
-              {error && (
-                <div className="text-red-600 text-sm">{error}</div>
-              )}
+              {error && <div className="text-red-600 text-sm">{error}</div>}
 
               <button
                 type="submit"
@@ -188,10 +191,7 @@ export default function Generate() {
           )}
 
           <div className="mt-8 text-center">
-            <Link
-              href="/"
-              className="text-[#29a587] hover:text-[#238f75]"
-            >
+            <Link href="/" className="text-[#29a587] hover:text-[#238f75]">
               ← Back to Home
             </Link>
           </div>
@@ -199,4 +199,4 @@ export default function Generate() {
       </main>
     </div>
   );
-} 
+}
