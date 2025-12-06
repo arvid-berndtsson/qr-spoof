@@ -78,6 +78,16 @@ export default function Header() {
             >
               About
             </Link>
+            <Link
+              href="/spread-awareness"
+              className={`text-sm font-medium transition-colors duration-200 ${
+                isActive("/spread-awareness")
+                  ? "text-[#29a587]"
+                  : "text-gray-600 hover:text-[#29a587]"
+              }`}
+            >
+              Spread Awareness
+            </Link>
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -232,6 +242,16 @@ export default function Header() {
             }`}
           >
             About
+          </Link>
+          <Link
+            href="/spread-awareness"
+            className={`block px-3 py-2 text-base font-medium ${
+              currentPath === "/spread-awareness"
+                ? "bg-gray-50 text-[#29a587]"
+                : "text-gray-600 hover:bg-gray-50 hover:text-[#29a587]"
+            }`}
+          >
+            Spread Awareness
           </Link>
           <div className="pt-4 pb-3 border-t border-gray-200">
             <div className="px-3">

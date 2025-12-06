@@ -165,6 +165,64 @@ export default function Home() {
               </div>
             )}
 
+            <div className="bg-blue-50 p-8 rounded-2xl shadow-sm border border-blue-100 mb-8">
+              <h2 className="text-2xl font-semibold text-blue-900 mb-4 flex items-center">
+                <svg
+                  className="h-6 w-6 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                Educational Purpose Only
+              </h2>
+              <p className="text-blue-800 leading-relaxed mb-4">
+                This tool is designed <strong>exclusively for educational and
+                security awareness purposes</strong>. Use it responsibly to:
+              </p>
+              <ul className="space-y-2 text-blue-800">
+                <li className="flex items-start">
+                  <span className="text-blue-500 mr-2">•</span>
+                  Teach people about QR code security risks
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-500 mr-2">•</span>
+                  Demonstrate quishing attacks in controlled environments
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-500 mr-2">•</span>
+                  Conduct authorized security awareness training
+                </li>
+              </ul>
+              <div className="mt-4 pt-4 border-t border-blue-200">
+                <p className="text-sm text-blue-700">
+                  Learn more about{" "}
+                  <a
+                    href="/spread-awareness"
+                    className="underline hover:text-blue-900"
+                  >
+                    ethical ways to spread awareness
+                  </a>{" "}
+                  or read our{" "}
+                  <a
+                    href="https://github.com/arvid-berndtsson/qr-spoof/blob/main/CODE_OF_CONDUCT.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-blue-900"
+                  >
+                    Code of Conduct
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+
             <div className="prose prose-lg max-w-none mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">
                 Generate Awareness QR Codes
