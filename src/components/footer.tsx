@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-white border-t border-gray-100">
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-6">
             <Link
               href="/terms"
               className="text-sm text-gray-500 hover:text-[#29a587]"

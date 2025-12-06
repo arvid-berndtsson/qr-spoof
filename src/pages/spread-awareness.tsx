@@ -326,8 +326,8 @@ export default function SpreadAwareness() {
                     Example Post
                   </h3>
                   <div className="bg-white p-4 rounded border border-gray-200 text-sm text-gray-700 italic">
-                    &quot;Did you know that QR code phishing (quishing) attacks
-                    have increased by 300% in the past year? 📊
+                    &quot;QR code phishing (quishing) attacks are on the rise,
+                    with significant increases reported in recent years. 📊
                     <br />
                     <br />
                     I&apos;ve been using QR Spoof to teach people about QR code
