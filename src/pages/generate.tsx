@@ -149,12 +149,12 @@ export default function Generate() {
                   This tool is designed for educational and security awareness
                   purposes. Use it responsibly for training, education, or
                   authorized awareness campaigns.{" "}
-                  <a
+                  <Link
                     href="/spread-awareness"
                     className="underline hover:text-blue-900"
                   >
                     Learn more about ethical usage
-                  </a>
+                  </Link>
                   .
                 </p>
               </div>

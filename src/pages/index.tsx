@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import QRCodeGenerator from "@/components/QRCodeGenerator";
 
 export const runtime = "experimental-edge";
@@ -203,12 +204,12 @@ export default function Home() {
               <div className="mt-4 pt-4 border-t border-blue-200">
                 <p className="text-sm text-blue-700">
                   Learn more about{" "}
-                  <a
+                  <Link
                     href="/spread-awareness"
                     className="underline hover:text-blue-900"
                   >
                     ethical ways to spread awareness
-                  </a>{" "}
+                  </Link>{" "}
                   or read our{" "}
                   <a
                     href="https://github.com/arvid-berndtsson/qr-spoof/blob/main/CODE_OF_CONDUCT.md"
