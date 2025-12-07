@@ -18,22 +18,18 @@ export default function Footer() {
             >
               Privacy
             </Link>
-            <a
-              href="https://github.com/arvid-berndtsson/qr-spoof/blob/main/CODE_OF_CONDUCT.md"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/code-of-conduct"
               className="text-sm text-gray-500 hover:text-[#29a587]"
             >
               Code of Conduct
-            </a>
-            <a
-              href="https://github.com/arvid-berndtsson/qr-spoof/blob/main/SECURITY.md"
-              target="_blank"
-              rel="noopener noreferrer"
+            </Link>
+            <Link
+              href="/security"
               className="text-sm text-gray-500 hover:text-[#29a587]"
             >
               Security
-            </a>
+            </Link>
             <a
               href="https://github.com/arvid-berndtsson/qr-spoof"
               target="_blank"
