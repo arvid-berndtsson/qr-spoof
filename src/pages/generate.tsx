@@ -124,6 +124,43 @@ export default function Generate() {
             </p>
           </div>
 
+          <div className="bg-blue-50 rounded-lg border border-blue-100 p-6 mb-8">
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <svg
+                  className="h-6 w-6 text-blue-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <div className="ml-3">
+                <h3 className="text-sm font-medium text-blue-800 mb-1">
+                  Educational Purpose Only
+                </h3>
+                <p className="text-sm text-blue-700">
+                  This tool is designed for educational and security awareness
+                  purposes. Use it responsibly for training, education, or
+                  authorized awareness campaigns.{" "}
+                  <Link
+                    href="/spread-awareness"
+                    className="underline hover:text-blue-900"
+                  >
+                    Learn more about ethical usage
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
             <div className="prose prose-lg max-w-none mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">
